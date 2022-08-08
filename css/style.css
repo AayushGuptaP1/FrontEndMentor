@@ -9,79 +9,85 @@ html {
 body {
   background-color: #f2ebe3;
   font-family: "Montserrat", sans-serif;
-}
-.perfume-page {
-  max-width: 60rem;
-  height: auto;
-
-  margin: 12rem auto;
-  display: flex;
-
-  border-radius: 11px;
-}
-
-.perfume-image {
-  width: 50%;
-}
-.perfume-text {
-  background-color: #fff;
-  padding: 2.8rem;
-}
-.perfume {
   color: #6c7289;
-  font-size: 1.2rem;
-  letter-spacing: 5px;
-  margin-bottom: 1.8rem;
-}
-.perfume-name {
-  font-family: "Fraunces", serif;
-  font-weight: 700;
-  font-size: 3rem;
-  color: #1c232b;
-  line-height: 1;
-  margin-bottom: 2.4rem;
-}
-.perfume-description {
-  font-size: 1.4rem;
-  color: #6c7289;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-.price {
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 3.2rem;
-}
-.discount-price {
-  color: #3c8067;
-  font-family: "Fraunces", serif;
-  font-size: 2.8rem;
   font-weight: 500;
-  margin-right: 2.4rem;
 }
-.real-price {
-  color: #6c7289;
-  text-decoration: line-through;
-}
-.button {
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  color: #fff;
-  background-color: #3c8067;
+main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-  border-radius: 9px;
+  min-height: 100vh;
+}
+.perfume-page {
+  max-width: 60rem;
+
+  border-radius: 11px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+}
+.perfume-image {
+  width: 50%;
+}
+.perfume-description {
+  padding: 3.2rem 3.2rem;
+}
+.perfume {
+  font-size: 1.2rem;
+  letter-spacing: 7px;
+
+  margin-bottom: 2rem;
+}
+.perfume-name {
+  font-family: "Fraunces", serif;
+  font-size: 3.4rem;
+  line-height: 1;
+  color: #1c232b;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.perfume-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+
+  margin-bottom: 2rem;
+}
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+  margin-bottom: 2.4rem;
+}
+
+.discount-price {
+  font-family: "Fraunces", serif;
+
+  font-size: 3.2rem;
+  color: #3c8067;
+}
+.original-price {
+  font-size: 1.3rem;
+  text-decoration: line-through;
+}
+.cart {
+  font-family: "Montserrat", sans-serif;
+
+  color: #fff;
+  background-color: #3c8067;
+  padding: 1.6rem 0;
   border: none;
+  border-radius: 9px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   cursor: pointer;
 }
-.button:hover {
+.cart:active,
+.cart:hover {
   background-color: #1e4034;
 }
-.icon {
-  display: block;
-  margin-right: 2rem;
+.button-text {
+  font-size: 1.6rem;
 }
