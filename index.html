@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -10,9 +11,6 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | Product preview card component</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +19,8 @@
     />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/queries.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
     <main>
@@ -28,40 +28,34 @@
         <img
           class="perfume-image"
           src="images/image-product-desktop.jpg"
-          alt="Image of Perfume"
+          alt="Image of perfume"
         />
-
-        <div class="perfume-text">
+        <div class="perfume-description">
           <p class="perfume">PERFUME</p>
           <h1 class="perfume-name">Gabrielle Essence Eau De Parfum</h1>
-          <p class="perfume-description">
+          <p class="perfume-text">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div class="price">
-            <span class="discount-price">$149.99</span
-            ><span class="real-price"> $169.99</span>
+          <div class="price-section">
+            <span class="discount-price"> $149.99 </span>
+            <span class="original-price"> $169.99 </span>
           </div>
-          <button class="button">
-            <img
-              class="icon"
-              src="images/icon-cart.svg"
-              alt="icon of a shopping cart"
-            />
-            Add to Cart
+          <button class="cart">
+            <img src="images/icon-cart.svg" alt="icon of a cart" class="icon" />
+            <p class="button-text">Add to Cart</p>
           </button>
         </div>
       </div>
     </main>
-    <aside>
-      <footer>
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Aayush Gupta</a>.
-        </div>
-      </footer>
-    </aside>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/AayushGuptaP1"
+        >Aayush Gupta</a
+      >.
+    </div>
   </body>
 </html>
